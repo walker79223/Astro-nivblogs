@@ -1,0 +1,187 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "About Us";
+const description = "About us";
+const permalink = `${Astro.site.href}about`;
+---
+
+<BaseLayout
+    title={title}
+    description={description}
+    permalink={permalink}
+    current="about"
+>
+    <div class="section">
+        <div class="asd">
+            <div class="content-section">
+                <div class="title">
+                    <h2>About Me</h2>
+                </div>
+                <div class="content">
+                    <h3>MY INTRO AND MY ACHIEVEMENTS</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat.
+                    </p>
+                    <div class="button">
+                        <a
+                            href="https://puravmehta.nivblogs.com"
+                            target="_blank"
+                            >Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="image-section">
+                <lottie-player
+                    src="https://assets1.lottiefiles.com/packages/lf20_ggw4qc1o.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 480px; height: 480px;"
+                    loop
+                    autoplay
+                />
+            </div>
+        </div>
+
+        <div class="asd">
+            <lottie-player
+                src="https://assets2.lottiefiles.com/packages/lf20_xl25zrrh.json"
+                background="transparent"
+                speed="1"
+                style="width: 480px; height: 480px;"
+                loop
+                autoplay
+            />
+            <div class="content-sections">
+                <div class="title">
+                    <h2>nice</h2>
+                </div>
+                <div class="content">
+                    <h3>asdasdasdasd</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Laborum eveniet voluptatum voluptatibus enim
+                        quisquam, distinctio ex nisi excepturi nemo facilis!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script
+        src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+    ></script>
+</BaseLayout>
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+    *,
+    h1 {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+    }
+    .content h3 {
+        font-family: "Montserrat", sans-serif;
+    }
+    .title h2 {
+        font-family: "Montserrat", sans-serif;
+    }
+    .section {
+        width: 100%;
+        min-height: 100vh;
+        /* background-color: #202122; */
+    }
+
+    .content-section {
+        float: left;
+        width: 55%;
+    }
+    .content-sections {
+        float: right;
+        width: 55%;
+    }
+    .content-sections .title {
+        text-transform: uppercase;
+        font-size: 28px;
+    }
+
+    .content-sections .content h3 {
+        margin-top: 20px;
+        color: var(--text-main);
+        font-size: 21px;
+    }
+    .image-section {
+        float: right;
+        width: 40%;
+    }
+    .content-section .title {
+        text-transform: uppercase;
+        font-size: 28px;
+    }
+    .content-section .content h3 {
+        margin-top: 20px;
+        color: var(--text-main);
+        font-size: 21px;
+    }
+    .content-section .content p {
+        margin-top: 10px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .content-section .content .button {
+        margin-top: 45px;
+    }
+    .content-section .content .button a {
+        /* background-color: #000000; */
+        padding: 12px 40px;
+        text-decoration: none;
+        /* color: #fff; */
+        font-family: "Montserrat", sans-serif;
+        font-size: 25px;
+        letter-spacing: 1.5px;
+        transition: background-color 0.3s ease 0s;
+        background-color: var(--primary-color);
+        transition: background-color 0.3s ease 0s;
+        color: #fff;
+    }
+    .content-section .content .button a:hover {
+        background-color: var(--button-hover);
+    }
+    @media screen and (max-width: 768px) {
+        .container {
+            width: 80%;
+            display: block;
+            margin: auto;
+            padding-top: 50px;
+        }
+        .content-section {
+            float: none;
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+        .image-section {
+            float: none;
+            width: 100%;
+        }
+        .content-section .title {
+            text-align: center;
+            font-size: 19px;
+        }
+        .content-section .content .button {
+            text-align: center;
+        }
+        .content-section .content .button a {
+            padding: 9px 30px;
+        }
+    }
+</style>
