@@ -6,5 +6,5 @@ This is a Astro which I made when i was learning about Astro this design looks c
 ![](demo.png)
 ## About Page
 ![](demo-about.png)
-## Sample Post)
+## Sample Post
 ![](post.png)
